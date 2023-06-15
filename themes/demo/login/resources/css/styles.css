@@ -1,0 +1,127 @@
+:root {
+    --textColor: #383838;
+    --textOffColor: #282828;
+    --baseColor: #ffffff;
+    --baseDarkColor: #d9d9d9;
+    --baseLightColor: #dfdfdf;
+    --secColor: #ffffff;
+  }
+  
+  body {
+    background: var(--baseColor) !important;
+    color: var(--textColor);
+    font-size: 18px;
+  }
+  
+  /* Login Card */
+  
+  .login-pf-page .card-pf {
+    border-radius: 18px;
+    background: var(--baseColor);
+    box-shadow: 18px 15px 96px #f0f8ff, -7px 20px 27px #ededed;
+  }
+  
+  /* Card Title */
+  
+  .login-pf-page .login-pf-header {
+    margin-bottom: 50px;
+  }
+  
+  #kc-page-title {
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  
+  /* Login Form */
+  
+  .login-pf-page .form-group {
+    margin-bottom: 30px;
+  }
+  
+  .login-pf-page .form-control {
+    border: none;
+    border-bottom: 1px solid rgb(168, 168, 168);
+    padding: 22px 30px;
+    font-size: 18px;
+    color: var(--textColor);
+    height: auto;
+    background: #ffffff;
+  }
+  
+  .login-pf-page .form-control::placeholder {
+    font-style: normal;
+    color: var(--textOffColor);
+  }
+  
+  /* Remember Me Toggle */
+  
+  #kc-form-options .checkbox {
+    font-size: 16px;
+    color: var(--textOffColor);
+    margin-bottom: 0;
+  }
+  
+  #kc-form-options label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    padding-left: 8px;
+  }
+  
+  #kc-form-options .toggle {
+    isolation: isolate;
+    position: relative;
+    height: 30px;
+    width: 60px;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid gray;
+  }
+  
+  #rememberMe {
+    display: none;
+  }
+  
+  #kc-form-options .dot {
+    height: 100%;
+    width: 200%;
+    background: #3a3a3a;
+    border-radius: 15px;
+    transform: translate3d(-75%, 0, 0);
+    transition: transform 0.4s cubic-bezier(0.85, 0.05, 0.18, 1.35);
+  }
+  
+  #rememberMe:checked ~ .dot {
+    transform: translate3d(25%, 0, 0);
+  }
+  
+  #kc-form-options .label-text {
+    margin-left: 16px;
+  }
+  
+  
+  #kc-form-reset-psw a {
+    font-size: 16px;
+    color: var(--secColor);
+    padding-right: 8px;
+  }
+  
+  #kc-form-buttons {
+    margin-top: 50px;
+  }
+  
+  /* Login Button */
+  
+  #kc-login {
+    border: none;
+    padding: 22px 30px;
+    font-size: 18px;
+    color: var(--secColor);
+    border-radius: 18px;
+  }
+  
+  #kc-login:active:focus {
+    /* background: linear-gradient(145deg, #202e39, #253743) !important; */
+    outline: none;
+  }
